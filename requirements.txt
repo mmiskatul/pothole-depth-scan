@@ -1,0 +1,24 @@
+# ---- Pothole detection + depth-severity visualizer ----
+# Python 3.10 - 3.13
+
+# Core detection (the YOLO26 checkpoint was trained with 8.4.x)
+ultralytics>=8.4.120
+
+# Torch: CPU wheels by default.
+# For NVIDIA GPU instead run:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+torch>=2.4
+torchvision>=0.19
+
+# Video I/O + drawing
+opencv-python>=4.9
+numpy>=1.26
+
+# Monocular depth backend (Depth Anything V2 Small, ~100 MB, auto-downloaded once)
+transformers>=4.44
+safetensors>=0.4
+huggingface-hub>=0.24
+pillow>=10.0
+
+# Progress bar
+tqdm>=4.66
