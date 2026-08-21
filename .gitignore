@@ -1,0 +1,27 @@
+# --- Model weights (44 MB YOLO checkpoint) ---
+*.pt
+*.zip
+
+# --- Video input / output ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+outputs/
+
+# --- Local helper scripts ---
+export_linkedin.py
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
